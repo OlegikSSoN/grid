@@ -1,0 +1,47 @@
+.perent {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 10px;
+}
+
+.child {
+    width: 100%;
+    min-height: 100px;
+    background-color: #ff0000;
+}
+
+.perent :nth-child(2) {
+ background-color: rgb(255, 251, 0);
+ grid-column: 2 / 3;
+ grid-row: 2 / 4;
+}
+
+/*
+.perent first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blue;
+}
+
+.child1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blue;
+}
+
+.perent :nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blue;
+}
+
+.child {
+    width: 100%;
+    height: 100px;
+    background-color: #ff0000;
+}
+
+.perent :nth-child(2) {
+ background-color: blue;
+ grid-area: 2 / 2 / 4 / 3;
+}
